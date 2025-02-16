@@ -1,40 +1,45 @@
-#include <iostream>
-#include <string>
+// #include <iostream>
+// #include <string>
 
 // Mohammed U.
 // CSCI 13500
 
+#include <iostream>
+#include <string>
+
 using namespace std;
 
 int main() {
-    // Defining the questions and expected answers; check if string questionX = string expected_answerX
+    // Define the questions and expected answers
     string question1 = "What is -1 + 5 / 3 ?";
     string expected_answer1 = "0";
 
     string question2 = "Assume that n is properly declared and initialized. Write a condition to represent that n does NOT satisfy 0 < n < 100.";
     string expected_answer2 = "(n <= 0 || n >= 100)";
 
-    // Take user input and check if it matches exactly
     string user_answer;
-    
-    // Check if string questionX = string expected_answerX
-    // If it does, then "True"
-    // If it does not, then "False"
 
-    cout << question1 << " ";
-    getline(cin, user_answer); // this reads the entire line
+    // First question
+    cout << question1 << endl;
+    cout << "Your Answer: ";
+    getline(cin, user_answer);
+
     if (user_answer == expected_answer1) {
-        cout << "True" << endl;
+        cout << "true" << endl;
     } else {
-        cout << "False" << endl;
+        cout << "false" << endl;
     }
 
-    cout << question2 << " ";
-    getline(cin, user_answer); 
+    // Second question
+    cout << endl;
+    cout << question2 << endl;
+    cout << "Your Answer: ";
+    getline(cin, user_answer);
+
     if (user_answer == expected_answer2) {
-        cout << "True" << endl;
+        cout << "true" << endl;
     } else {
-        cout << "False" << endl;
+        cout << "false" << endl;
     }
 
     return 0;
