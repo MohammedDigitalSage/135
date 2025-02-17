@@ -56,10 +56,10 @@ when invalid index is input.
 #include <iostream>
 
 int main() {
-    const int SIZE = 10;  // Array size (we coulf do 10, 11, 12, etc.)
-    int myData[SIZE];     // Declare an array of size 10
+    const int SIZE = 10;  // the array size (we could do 10, 11, 12, etc.)
+    int myData[SIZE];     // an array of size 10
 
-    // Fill the array with 1s, so: 1 1 1 1 1 1 1 1 1 1 
+    // filling the array with 1s, so: myData[10] = 1 1 1 1 1 1 1 1 1 1 
     for (int i = 0; i < SIZE; i++) {
         myData[i] = 1;
     }
@@ -85,7 +85,7 @@ int main() {
         std::cout << "Input value: ";
         std::cin >> value;
 
-        // Update the array at the specified index
+        // Updating the array at the specified index
         myData[index] = value;
 
     } while (true); // Infinite loop until an invalid index is given
